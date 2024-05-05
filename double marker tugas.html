@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Punya Farhat</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene
+      embedded
+      vr-mode-ui="enabled: false"
+      arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;"
+    >
+      <!-- MARKER -->
+      <!-- hiro -->
+      <a-marker preset="hiro">
+        <a-entity
+          gltf-model=./assets/cat1/scene.gltf
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="0.01 0.01 0.01"
+        ></a-entity>
+
+      </a-marker>
+      <!-- kanji -->
+      <a-marker preset="kanji">
+        <a-entity
+          gltf-model="./assets/cat2/scene.gltf"
+          rotation="-90 0 0"
+          position="0 0 0"
+          scale="1 1 1"
+        ></a-entity>
+      </a-marker>
+      <!-- barcode 0 -->
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="0">
+            <a-gltf-model src="./assets/cat1/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="1">
+            <a-gltf-model src="./assets/cat2/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="2">
+            <a-gltf-model src="./assets/cat3/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="3">
+            <a-gltf-model src="./assets/cat4/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="4">
+            <a-gltf-model src="./assets/cat5/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="5">
+            <a-gltf-model src="./assets/cat6/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="6">
+            <a-gltf-model src="./assets/cat7/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="7">
+            <a-gltf-model src="./assets/cat8/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="8">
+            <a-gltf-model src="./assets/cat9/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- handle matrix marker -->
+        <a-marker type="barcode" value="9">
+            <a-gltf-model src="./assets/cat10/scene.gltf" rotation="-90 0 0" position="0.05 0.05 0.05" scale="0.5 0.5 0.5"></a-gltf-model>
+        </a-marker>
+
+        <!-- add a simple camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+
+</html>
